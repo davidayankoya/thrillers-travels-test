@@ -2,7 +2,7 @@
 
 import { Heading } from '@/common/Text/Heading'
 import { Stack } from '@chakra-ui/react'
-import React, { Suspense, useMemo } from 'react'
+import React, { useMemo } from 'react'
 import { trendingDestinations } from '@/constants/mock'
 import DestinationCard from '@/common/Card/DestinationCard'
 import ScrollCarousel from '@/common/Carousel/ScrollCarousel'

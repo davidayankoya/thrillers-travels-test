@@ -8,15 +8,6 @@ import { DestinationCardSk } from '@/common/Card/DestinationCard'
 import { ElementColor } from '@/constants/colors'
 
 
-export function Fallback() {
-    return (
-        <Stack direction={['column', 'column', 'row']} w='98%' spacing={3} bgColor={ElementColor.white} p={3}>
-            <DestinationCardSk w='50%'/>
-            <DestinationCardSk w='50%' />
-        </Stack>
-    )
-}
-
 export default function Home() {
     return (
         <VStack spacing={10} pt={[0, 0, 4]} pb='90px'>

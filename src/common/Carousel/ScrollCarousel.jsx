@@ -14,7 +14,6 @@ function ScrollCarousel({ items = [], responsive = responsiveCaro, infinite = fa
         <AliceCarousel
             mouseTracking
             keyboardNavigation
-            // disableDotsControls
             autoWidth
             items={items}
             infinite={infinite}
