@@ -21,7 +21,7 @@ function Loader() {
             zIndex='3000'
         >
             <DotLoader
-                size={44}
+                size={50}
                 color={ElementColor.blue}
             />
         </Box>

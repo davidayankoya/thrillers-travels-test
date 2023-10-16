@@ -24,7 +24,7 @@ function HeaderContent() {
     return (
         <React.Fragment>
             <Input
-                placeholder='Search for any things ...'
+                placeholder='Search any things ...'
                 leftElement={<FiSearch color={ElementColor.lightShadow} size={18} />}
                 w='30%'
             />

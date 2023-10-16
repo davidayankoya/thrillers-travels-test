@@ -41,7 +41,7 @@ export function Input ({
             {label &&
                 <FormLabel
                     htmlFor={`${name} ${label}`}
-                    color={custom ? ElementColor.red : labelColor || TextColor.black}
+                    color={labelColor || TextColor.black}
                     fontSize='13px'
                     mb='6px'
                     sx={labelStyle}
@@ -70,17 +70,17 @@ export function Input ({
                     type={type}
                     size='md'
                     fontSize='16px'
-                    color={custom ? ElementColor.red : color || TextColor.gray}
+                    color={color || TextColor.gray}
                     pl={leftElement ? '42px' : '12px'}
                     pr={rightElement ? '42px' : '12px'}
                     py={5}
                     h={props.h || '40px'}
                     borderStyle='inset'
-                    _focus={{ borderBottom: custom ? `2px solid ${ElementColor.red}` : focusBorder || `1px solid ${ElementColor.fadedBlue}` }}
+                    _focus={{ borderBottom: focusBorder || `1px solid ${ElementColor.fadedBlue}` }}
                     placeholder={type === 'password' ? '.........' : placeholder}
                     _placeholder={props._placeholder || { color: TextColor.grey, fontSize: "13px" }}
-                    border={(errors && errors[name]) ? "2px solid crimson" : custom ? `2px solid ${ElementColor.red}` : border || `1px solid ${ElementColor.lightShadow}`}
-                    borderRadius={custom ? '100px' : radius || '10px'}
+                    border={(errors && errors[name]) ? "2px solid crimson": border || `1px solid ${ElementColor.lightGray}`}
+                    borderRadius={radius || '10px'}
                     sx={style}
                     cursor='pointer'
                     {...props}

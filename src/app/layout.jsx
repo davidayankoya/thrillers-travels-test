@@ -3,7 +3,6 @@ import './globals.css'
 import { Inter, Assistant } from 'next/font/google'
 import { Providers } from './providers'
 
-const inter = Inter({ subsets: ['latin'] })
 const font = Assistant({ subsets: ['latin'] })
 
 export const metadata = {

@@ -16,21 +16,32 @@ function SearchHeading() {
 
     return (
         <Flex w='full' justify='center' h='190px' bgImg='assets/img/couch.jpg' bgSize='cover' bgPos='center' pos='relative' borderRadius={[0, 10, 20]} mb={['180px', '180px', '40px']}>
-            <Stack direction={['column', 'column', 'row']} w={['full', 'full', '94%', '88%']} justify='space-between' px={5} py={4} pos='absolute' top='90%' bgColor={ElementColor.white} borderRadius={16}>
+            <Stack
+                direction={['column', 'column', 'row']}
+                w={['full', 'full', '94%', '88%']}
+                justify='space-between'
+                px={5}
+                py={4}
+                pos='absolute'
+                top='90%'
+                bgColor={ElementColor.white}
+                borderRadius={16}
+                boxShadow='0px 4px 40px 0px rgba(0,0,0,0.03)'
+            >
                 <Select
                     leftElement={<CiLocationOn color={TextColor.fadedBlue} size={20} />}
                     placeholder='Where Are You Going?'
                     options={['France', 'London', 'USA']}
                     w={['full', 'full', '30%']}
                 />
-                <Divider orientation='vertical' w='2px' h='34px' bgColor={ElementColor.lightGray} display={['none', 'none', 'initial']} />
+                <Divider orientation='vertical' w='2px' h='46px' bgColor={ElementColor.lightGray} display={['none', 'none', 'initial']} />
                 <Select
                     leftElement={<PiNotepadLight color={TextColor.fadedBlue} size={20}/>}
                     placeholder='Check-in Date'
                     options={nextFiveDays}
                     w={['full', 'full', '30%']}
                 />
-                <Divider orientation='vertical' w='2px' h='34px' bgColor={ElementColor.lightGray} display={['none', 'none', 'initial']} />
+                <Divider orientation='vertical' w='2px' h='46px' bgColor={ElementColor.lightGray} display={['none', 'none', 'initial']} />
                 <Select
                     leftElement={<HiOutlineUser color={TextColor.fadedBlue} size={20}/>}
                     placeholder='No of occupants'

@@ -21,21 +21,25 @@ function ScrollCarousel({ items = [], responsive = responsiveCaro, infinite = fa
                 disableDotsControls
                 paddingRight={30}
                 responsive={responsive}
-                renderPrevButton={() =>
+                renderPrevButton={({ isDisabled }) =>
                     <IconButton
                         aria-label="previous"
-                        icon={<BsChevronLeft size={16} color={ElementColor.blue} />}
+                        icon={<BsChevronLeft size={16} color={isDisabled ? ElementColor.darkBlue : 'white'} />}
                         variant="outline"
                         size='sm'
+                        bgColor={isDisabled ? 'white' : ElementColor.darkBlue}
+                        _hover={{ bgColor: isDisabled ? 'white' : ElementColor.darkBlue }}
                         borderColor={ElementColor.blue}
                     />
                 }
-                renderNextButton={() =>
+                renderNextButton={({ isDisabled }) =>
                     <IconButton
                         aria-label="next"
-                        icon={<BsChevronRight size={16} color={ElementColor.blue} />}
+                        icon={<BsChevronRight size={16} color={isDisabled ? ElementColor.darkBlue : 'white'} />}
                         variant="outline"
                         size='sm'
+                        bgColor={isDisabled ? 'white' : ElementColor.darkBlue}
+                        _hover={{ bgColor: isDisabled ? 'white' : ElementColor.darkBlue }}
                         borderColor={ElementColor.blue}
                     />
                 }

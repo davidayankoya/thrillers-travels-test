@@ -45,7 +45,7 @@ export function Select ({
                     {label}
                 </FormLabel>
             }
-            <Flex pos='relative' w='full'>
+            <Flex pos='relative' align='center' w='full' h='full'>
                 {leftElement &&
                     <Center>
                         {leftElement}

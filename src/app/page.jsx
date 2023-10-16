@@ -19,7 +19,7 @@ function Fallback() {
 
 export default function Home() {
     return (
-        <VStack spacing={10} pt={[0, 0, 4]}>
+        <VStack spacing={10} pt={[0, 0, 4]} pb='90px'>
             <SearchHeading />
             
             <TrendingDestinations />

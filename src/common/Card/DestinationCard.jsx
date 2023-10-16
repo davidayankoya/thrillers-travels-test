@@ -28,10 +28,9 @@ function DestinationCard({ w, location, description, currency = '$', price = 0.0
         <HStack
             w={['full', 'full', 'max-content']}
             py={4}
-            pl={3}
+            pl={[2, 2, 3]}
             pr={5}
-            mr={4}
-            spacing={4}
+            spacing={[4, 4, 3]}
             borderRadius='xl'
             bgColor={ElementColor.white}
             cursor='pointer'
@@ -42,21 +41,21 @@ function DestinationCard({ w, location, description, currency = '$', price = 0.0
                 src={image_url}
                 width={140}
                 height={120}
-                w={[100, 120, 140]}
+                w={['32%', 120, 140]}
                 alt={`destination ${location}`}
                 borderRadius='xl'
                 fallback={<ImageSk/>}
             />
 
-            <Stack h='full' align='start' justify='space-between' spacing={4} py={3} mr={4}>
+            <Stack w={['68%', '68%', '']} h='full' align='start' justify='space-between' spacing={4} py={3} mr={4}>
                 <Flex w='full' justify='space-between'>
                     <TextLg fontWeight={700} color={TextColor.blue}>{location}</TextLg>
                     <HStack>
-                        <TbStarFilled color={ElementColor.gold} /><TextSm lineHeight={1}>{rating}/5</TextSm>
+                        <TbStarFilled color={ElementColor.gold} /><TextSm lineHeight={1} fontWeight={500} color={TextColor.blue}>{rating}/5</TextSm>
                     </HStack>
                 </Flex>
 
-                <Flex w={['70%', '70%', '90%']} flexWrap='wrap' overflowX='hidden'>
+                <Flex w={['90%', '90%', '90%']} flexWrap='wrap' overflowX='hidden'>
                     <TextSm clip>{description}</TextSm>
                 </Flex>
 

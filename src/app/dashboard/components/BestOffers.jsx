@@ -9,14 +9,14 @@ import { TextColor } from '@/constants/colors'
 
 function BestOffers() {
     return (
-        <VStack w='full' align='start' px={[4, 4, 0]} spacing={2} py={2}>
+        <VStack w='full' align='start' px={[4, 4, 0]} spacing={2}>
             <Heading text='Best Offers'>
-                <TextSm pr={4} color={TextColor.blue} fontSize={['13px', '14px', '14px']} fontWeight={500} _hover={{ textDecor: 'underline' }} cursor='pointer'>
+                <TextSm mr={[3, 3, 7]} color={TextColor.blue} fontSize={['14px', '14px', '14px']} fontWeight={600} _hover={{ textDecor: 'underline' }} cursor='pointer'>
                     View All
                 </TextSm>
             </Heading>
             
-            <Stack direction={['row', 'row', 'row']} w='full' spacing={4} overflowX='auto' className='scroll-custom'>
+            <Stack direction='row' w='full' py={4} spacing={4} overflowX='auto' className='scroll-custom'>
                 {bestOffers.map((e, index) => 
                     <PropertyCard
                         key={index}

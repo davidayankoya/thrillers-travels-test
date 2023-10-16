@@ -16,7 +16,7 @@ function Content({ toggleSidebar }) {
             <Stack w='full' spacing={8}>
                 <ProfileCard user={mockUser} />
                 <Input
-                    placeholder='Search for any things ...'
+                    placeholder='Search any things ...'
                     leftElement={<FiSearch color={ElementColor.lightShadow} size={18} />}
                 />
             </Stack>
@@ -37,6 +37,7 @@ function Content({ toggleSidebar }) {
                     title='Logout'
                     url='#'
                     icon={PiCaretCircleRight}
+                    onClick={toggleSidebar}
                 />
             </Flex>
 
