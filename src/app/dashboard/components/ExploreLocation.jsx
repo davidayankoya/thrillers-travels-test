@@ -16,7 +16,7 @@ function ExploreLocation() {
     , [])
     
     return (
-        <Stack w='full' spacing={2} px={[4, 4, 0]} py={2} pos='relative' overflowX='hidden'>
+        <Stack w='full' spacing={3} px={[4, 4, 0]} py={2} pos='relative' overflowX='hidden'>
             <Heading text='Explore France' />
             
             <ScrollCarousel

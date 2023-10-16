@@ -4,12 +4,12 @@ import React from 'react'
 function ImageSk() {
     return (
         <Skeleton
-            key={index}
-            h='60px'
+            h='140px'
+            w={['90px', '120px', '140px']}
             borderRadius='md'
             mb={2}
             startColor='white.600'
-            endColor='gray.50'
+            endColor='gray.300'
         />
     )
 }

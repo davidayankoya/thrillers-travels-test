@@ -1,5 +1,3 @@
-'use client'
-
 import Button from '@/common/Button/Button'
 import { Select } from '@/common/Form'
 import { ElementColor, TextColor } from '@/constants/colors'
@@ -13,9 +11,8 @@ const nextFiveDays = Array(5).fill(0).map((e, index) => index === 0 ? 'Today' : 
 
 
 function SearchHeading() {
-
     return (
-        <Flex w='full' justify='center' h='190px' bgImg='assets/img/couch.jpg' bgSize='cover' bgPos='center' pos='relative' borderRadius={[0, 10, 20]} mb={['180px', '180px', '40px']}>
+        <Flex w='full' justify='center' h='190px' bgImg='assets/img/couch.jpg' bgSize='cover' bgPos='center' pos='relative' borderRadius={[0, 10, 20]} mb={['220px', '220px', '40px']}>
             <Stack
                 direction={['column', 'column', 'row']}
                 w={['full', 'full', '94%', '88%']}
@@ -52,6 +49,7 @@ function SearchHeading() {
                     text='Search'
                     bgColor={ElementColor.blue}
                     w={['full', 'full', '10%']}
+                    mt={[3, 3, 0]}
                 />
             </Stack>
         </Flex>

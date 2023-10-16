@@ -2,7 +2,7 @@
 
 import { Heading } from '@/common/Text/Heading'
 import { Stack } from '@chakra-ui/react'
-import React, { useMemo } from 'react'
+import React, { Suspense, useMemo } from 'react'
 import { trendingDestinations } from '@/constants/mock'
 import DestinationCard from '@/common/Card/DestinationCard'
 import ScrollCarousel from '@/common/Carousel/ScrollCarousel'
@@ -10,13 +10,13 @@ import ScrollCarousel from '@/common/Carousel/ScrollCarousel'
 
 function TrendingDestinations() {
     const trending = useMemo(() => 
-        trendingDestinations.map((e, index) => 
+        trendingDestinations.map((e, index) =>
             <DestinationCard key={index} {...e} />
         )
     , [])
 
     return (
-        <Stack w='full' spacing={2} px={[4, 4, 0]} py={2} pos='relative' overflowX='hidden'>
+        <Stack w='full' spacing={3} px={[4, 4, 0]} py={2} pos='relative' overflowX='hidden'>
             <Heading text='Trending Destinations' />
 
             <ScrollCarousel

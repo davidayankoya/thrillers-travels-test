@@ -8,7 +8,7 @@ import { DestinationCardSk } from '@/common/Card/DestinationCard'
 import { ElementColor } from '@/constants/colors'
 
 
-function Fallback() {
+export function Fallback() {
     return (
         <Stack direction={['column', 'column', 'row']} w='98%' spacing={3} bgColor={ElementColor.white} p={3}>
             <DestinationCardSk w='50%'/>

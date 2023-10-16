@@ -1,5 +1,3 @@
-'use client'
-
 import { Box, Center, HStack, VStack, Image } from '@chakra-ui/react'
 import React from 'react'
 import { TextMd, TextSm, TextLg } from '../Text/Text'
@@ -27,8 +25,8 @@ function PropertyCard({ w, title, location, currency = '$', price = 0.0, image_u
         >
             <Image
                 src={image_url}
-                width='full'
-                height='110px'
+                w='full'
+                h='110px'
                 alt={`destination ${location}`}
                 borderRadius='xl'
             />

@@ -24,11 +24,6 @@ function HeaderLeft() {
                 />
                 <NextLink href="/">
                     <Logo />
-                    {/* <Image
-                        src={Logo}
-                        width='100px'
-                        alt='study now logo'
-                    /> */}
                 </NextLink>
             </HStack>
 

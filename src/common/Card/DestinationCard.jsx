@@ -1,13 +1,11 @@
-'use client'
-
 import { ElementColor, TextColor } from '@/constants/colors'
-import { Flex, HStack, Skeleton, Stack, Text, VStack } from '@chakra-ui/react'
+import { Flex, HStack, Skeleton, Stack, Image } from '@chakra-ui/react'
 import React from 'react'
 import { TextLg, TextSm } from '../Text/Text'
 import { TbStarFilled } from 'react-icons/tb'
 import { moneyFormat } from '@/utils/utils'
-import Image from '../Image/Image'
 import ImageSk from '../Skeleton/ImageSk'
+
 
 export function DestinationCardSk({ w }) {
     return (
@@ -27,10 +25,10 @@ function DestinationCard({ w, location, description, currency = '$', price = 0.0
     return (
         <HStack
             w={['full', 'full', 'max-content']}
-            py={4}
+            py={3}
             pl={[2, 2, 3]}
-            pr={5}
-            spacing={[4, 4, 3]}
+            pr={[5, 5, 3]}
+            spacing={[3, 3, 3]}
             borderRadius='xl'
             bgColor={ElementColor.white}
             cursor='pointer'
@@ -39,15 +37,14 @@ function DestinationCard({ w, location, description, currency = '$', price = 0.0
         >
             <Image
                 src={image_url}
-                width={140}
-                height={120}
-                w={['32%', 120, 140]}
+                w={['32%', '120px', '140px']}
+                h='140px'
                 alt={`destination ${location}`}
                 borderRadius='xl'
                 fallback={<ImageSk/>}
             />
 
-            <Stack w={['68%', '68%', '']} h='full' align='start' justify='space-between' spacing={4} py={3} mr={4}>
+            <Stack w={['66%', '66%', '']} h='full' align='start' justify='space-between' spacing={4} py={3} mr={4}>
                 <Flex w='full' justify='space-between'>
                     <TextLg fontWeight={700} color={TextColor.blue}>{location}</TextLg>
                     <HStack>
